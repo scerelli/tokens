@@ -1,0 +1,26 @@
+{
+  "source": ["src/tokens/**/*.json"],
+  "platforms": {
+    "css": {
+      "transforms": ["attribute/cti", "name/cti/kebab", "time/seconds", "content/icon", "size/rem", "hex/hslvalue" ],
+      "buildPath": "dist/",
+      "files": [{
+        "format": "css/variables",
+        "destination": "tokens.css"
+      }],
+      "options": {
+        "showFileHeader": true
+      }
+    },
+    "json": {
+      "buildPath": "dist/",
+      "files": [{
+        "format": "json/nested",
+        "destination": "tokens.json"
+      }],
+      "options": {
+        "showFileHeader": true
+      }
+    }
+  }
+}

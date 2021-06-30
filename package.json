@@ -1,0 +1,50 @@
+{
+  "name": "@wonderflow/tokens",
+  "version": "0.0.0",
+  "description": "Design tokens from Wonderflow design language",
+  "files": [
+    "dist/tokens.css",
+    "dist/tokens.json"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist/**",
+    "build": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npm run lint:scripts",
+    "lint:scripts": "eslint --fix src/**/*.json src/**/*.js",
+    "lint:commits": "commitlint --edit",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wonderflow-bv/tokens.git"
+  },
+  "keywords": [
+    "tokens",
+    "wanda",
+    "design",
+    "system",
+    "wonderflow"
+  ],
+  "author": "Wonderflow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wonderflow-bv/tokens/issues"
+  },
+  "homepage": "https://github.com/wonderflow-bv/tokens#readme",
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "style-dictionary": "^3.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.29.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-json": "^3.0.0",
+    "husky": "^6.0.0",
+    "tinycolor2": "^1.4.2"
+  }
+}
