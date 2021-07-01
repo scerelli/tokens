@@ -3,7 +3,7 @@
   "platforms": {
     "web": {
       "basePxFontSize": 18,
-      "buildPath": "dist/web/",
+      "buildPath": "platforms/web/",
       "transformGroup": "custom-web",
       "files": [
         {

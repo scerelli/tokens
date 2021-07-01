@@ -14,7 +14,7 @@ based on the platform you're working on, you can import the tokens from the rela
 **app.js**
 
 ```jsx
-import tkns from '@wonderflow/tokens/web/tokens.json'
+import tkns from '@wonderflow/tokens/platforms/web/tokens.json'
 
 <div style={{color: `hsl(${tkns.color.blue['50']} / 10%)`}} />
 ```
@@ -22,7 +22,7 @@ import tkns from '@wonderflow/tokens/web/tokens.json'
 **app.css**
 
 ```css
-@import '@wonderflow/tokens/web/tokens.css';
+@import '@wonderflow/tokens/platforms/web/tokens.css';
 
 div {
   /* Colors are defined as HSL-4 but without the hsl() notation */
@@ -33,3 +33,7 @@ div {
 > **NOTE**
 >
 > You need to use [`postcss-import`](https://github.com/postcss/postcss-import) or [`postcss-easy-import`](https://github.com/TrySound/postcss-easy-import) to import files from node_modules
+
+## Platforms
+
+Currently we ship tokens only for the `web` platform, others may be added in the future.

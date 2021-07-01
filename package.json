@@ -4,10 +4,10 @@
   "description": "Design tokens from Wonderflow design language",
   "main": "index.js",
   "files": [
-    "dist/"
+    "platforms/"
   ],
   "scripts": {
-    "prebuild": "rimraf dist/",
+    "prebuild": "rimraf platforms/",
     "build": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npm run lint:scripts && npm run lint:commits",
