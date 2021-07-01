@@ -1,4 +1,5 @@
-# Wonderflow's design language tokens
+# Wonderflow's design language tokens [<img src="https://svgshare.com/i/Ygj.svg" alt="Wonderflow Logo" width="90" height="90" align="right">][https://design.wonderflow.ai]
+
 
 This repo contains all the design tokens generated from the Wonderflow design language. These tokens are the foundation for our digital products.
 ## How to use
