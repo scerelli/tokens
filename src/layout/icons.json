@@ -1,0 +1,18 @@
+{
+    "icon": {
+        "size": {
+            "16": {
+                "value": 16,
+                "attributes": {
+                    "category": "size"
+                }
+            },
+            "24": {
+                "value": 24,
+                "attributes": {
+                    "category": "size"
+                }
+            }
+        }
+    }
+}

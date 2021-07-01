@@ -1,23 +1,19 @@
 {
-  "source": ["src/tokens/**/*.json"],
+  "source": ["src/**/*.json"],
   "platforms": {
-    "css": {
-      "transforms": ["attribute/cti", "name/cti/kebab", "time/seconds", "content/icon", "size/rem", "hex/hslvalue" ],
-      "buildPath": "dist/",
-      "files": [{
-        "format": "css/variables",
-        "destination": "tokens.css"
-      }],
-      "options": {
-        "showFileHeader": true
-      }
-    },
-    "json": {
-      "buildPath": "dist/",
-      "files": [{
-        "format": "json/nested",
-        "destination": "tokens.json"
-      }],
+    "web": {
+      "buildPath": "dist/web/",
+      "transformGroup": "custom-web",
+      "files": [
+        {
+          "format": "css/variables",
+          "destination": "tokens.css"
+        },
+        {
+          "format": "json/nested",
+          "destination": "tokens.json"
+        }
+      ],
       "options": {
         "showFileHeader": true
       }

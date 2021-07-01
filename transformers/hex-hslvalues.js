@@ -1,10 +1,10 @@
 const Color = require('tinycolor2')
 
 module.exports = {
-  name: 'hex/hslvalue',
+  name: 'color/hslvalue',
   type: 'value',
   matcher: (prop) => {
-    return prop.attributes.type === 'color'
+    return prop.attributes.category === 'color'
   },
   transformer: (token) => {
     const color = Color(token.value)
