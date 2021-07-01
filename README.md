@@ -14,7 +14,7 @@ based on the platform you're working on, you can import the tokens from the rela
 **app.js**
 
 ```jsx
-import tkns from '@wonderflow/web/tokens.json'
+import tkns from '@wonderflow/tokens/web/tokens.json'
 
 <div style={{color: `hsl(${tkns.color.blue['50']} / 50%)`}} />
 ```
@@ -22,7 +22,7 @@ import tkns from '@wonderflow/web/tokens.json'
 **app.css**
 
 ```css
-@import '@wonderflow/web/tokens.css';
+@import '@wonderflow/tokens/web/tokens.css';
 
 div {
   /* Colors are defined as HSL-4 but without the hsl() notation */
