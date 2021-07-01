@@ -1,6 +1,7 @@
 const StyleDictionary = require('style-dictionary').extend('tokens.config.json')
 const HexHslValues = require('./transformers/hex-hslvalues')
 const SizePxToRem = require('./transformers/px-rem')
+const SizePxToRootEm = require('./transformers/px-rootem')
 const CssBezier = require('./transformers/css-bezier')
 
 /**
@@ -9,6 +10,7 @@ const CssBezier = require('./transformers/css-bezier')
  */
 StyleDictionary.registerTransform(HexHslValues)
 StyleDictionary.registerTransform(SizePxToRem)
+StyleDictionary.registerTransform(SizePxToRootEm)
 StyleDictionary.registerTransform(CssBezier)
 
 /**
@@ -22,6 +24,7 @@ StyleDictionary.registerTransformGroup({
     'name/cti/kebab',
     'time/seconds',
     'content/icon',
+    'size/px-rootem',
     'size/px-rem',
     'color/hslvalue',
     'easing/cubic-bezier'

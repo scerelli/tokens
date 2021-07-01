@@ -2,6 +2,7 @@
   "source": ["src/**/*.json"],
   "platforms": {
     "web": {
+      "basePxFontSize": 18,
       "buildPath": "dist/web/",
       "transformGroup": "custom-web",
       "files": [

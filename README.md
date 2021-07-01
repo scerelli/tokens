@@ -16,7 +16,7 @@ based on the platform you're working on, you can import the tokens from the rela
 ```jsx
 import tkns from '@wonderflow/tokens/web/tokens.json'
 
-<div style={{color: `hsl(${tkns.color.blue['50']} / 50%)`}} />
+<div style={{color: `hsl(${tkns.color.blue['50']} / 10%)`}} />
 ```
 
 **app.css**

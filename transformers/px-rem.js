@@ -4,8 +4,8 @@ module.exports = {
   matcher: (prop) => {
     return prop.attributes.category === 'size'
   },
-  transformer: (token) => {
-    const baseRootSize = 18
+  transformer: (token, options) => {
+    const baseRootSize = options && options.basePxFontSize
     return `${(token.value / baseRootSize).toFixed(2)}rem`
   }
 }
