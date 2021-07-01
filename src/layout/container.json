@@ -1,0 +1,22 @@
+{
+  "container": {
+    "large": {
+      "value": 1104,
+      "attributes": {
+        "category": "size"
+      }
+    },
+    "medium": {
+      "value": 656,
+      "attributes": {
+        "category": "size"
+      }
+    },
+    "small": {
+      "value": 100,
+      "attributes": {
+        "category": "size"
+      }
+    }
+  }
+}
