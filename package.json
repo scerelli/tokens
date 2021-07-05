@@ -21,6 +21,9 @@
     "type": "git",
     "url": "git+https://github.com/wonderflow-bv/tokens.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "tokens",
     "wanda",
