@@ -13,7 +13,9 @@
     "lint": "npm run lint:scripts && npm run lint:commits",
     "lint:scripts": "eslint --fix src/**/*.json ./*.js",
     "lint:commits": "commitlint --edit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "semantic-release",
+    "update:cssdb": "npx browserslist@latest --update-db"
   },
   "repository": {
     "type": "git",
