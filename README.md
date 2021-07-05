@@ -15,19 +15,15 @@ based on the platform you're working on, you can import the tokens from the rela
 
 If you want to import and use tokens inside your javascript-based project, you can import the `json` version and use it. Note that the color tokens are provided in HSL format, without the css `hsl()` notation, which you have to add each time.
 
-**app.js**
-
 ```jsx
 import tkns from '@wonderflow/tokens/platforms/web/tokens.json'
 
-<div style={{color: `hsl(${tkns['color-blue-50']} / 10%)`}} />
+<div style={{color: `hsl(${tkns.color.blue['50']} / 10%)`}} />
 ```
 
 ### Inside CSS
 
 Inside css files the tokens are available as custom env variables (`env(--[TOKEN-NAME])`), they are then converted into the final value at build-time.
-
-**app.css**
 
 ```css
 @import '@wonderflow/tokens/platforms/web/tokens.css';
