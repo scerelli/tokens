@@ -11,7 +11,7 @@
           "destination": "tokens.css"
         },
         {
-          "format": "json/nested",
+          "format": "json/flat",
           "destination": "tokens.json"
         }
       ],
