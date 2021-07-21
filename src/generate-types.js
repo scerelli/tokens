@@ -6,7 +6,7 @@ const tokens = require('../platforms/web/tokens.json')
 const run = () => {
   let types = ''
   JsonToTS(tokens).forEach(typeInterface => {
-    types += `\n\n${typeInterface.replace('interface', 'export interface')}`
+    types += `\n\n${typeInterface.replace('interface', 'export type').replace('{', '= {')}`
   })
   fs.writeFileSync(path.join('platforms', 'web', 'types.d.ts'), types)
 }
