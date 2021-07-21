@@ -31,11 +31,11 @@ import tkns from "@wonderflow/tokens/platforms/web/tokens.json";
 If your codebase is based on typescript you can import the tokens types which provide types validation for tokens when you use them inside other components. Here an example:
 
 ```jsx
-import { Space } from "@wonderflow/tokens/platforms/web/types";
+import { TokensTypes } from "@wonderflow/tokens/platforms/web/types";
 import React from "react";
 
 type MyComponentProps = {
-  padding: Space,
+  padding: TokensTypes["space"],
 };
 ```
 
