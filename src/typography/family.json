@@ -1,12 +1,12 @@
 {
-    "font": {
-        "family": {
-            "sans": {
-                "value": "system-ui, sans-serif"
-            },
-            "mono": {
-                "value": "monospace"
-            }
-        }
+  "font": {
+    "family": {
+      "sans": {
+        "value": "system-ui, sans-serif"
+      },
+      "mono": {
+        "value": "monospace"
+      }
     }
+  }
 }
