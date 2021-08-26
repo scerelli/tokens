@@ -157,7 +157,7 @@
       }
     },
     "200": {
-      "value": 20,
+      "value": 200,
       "attributes": {
         "category": "size"
       }
